@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.contenedor {
+    padding: 0 0 500px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #FC7300;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Belanosima';
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 920px;
+    background: #1F8A70;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(180, 23%, 95%, 0.4), hsla(165, 63%, 33%, 0.8)), url(../img/Titulo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(180, 23%, 95%, 0.4), hsla(165, 63%, 33%, 0.8)), url(../img/Titulo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: center;
+    padding: 30px 0 0 0;
+    word-spacing: 3px;
+    font-size: 25px;
+}
+
+nav>a {
+    color: #181823;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 50px 0 0
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos_header {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: auto;
+
+}
+
+.textos_header h1 {
+    font-size: 120px;
+    color: #FC7300;
+    font-family: 'Belanosima';
+}
+
+.textos_header h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #181823;
+}
+
+.ola {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Quienes somos? */
+
+.quienes-somos {
+    background: #1F8A70;
+}
+
+.contenedor-quienes-somos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-quienes-somos {
+    width: 40%;
+}
+
+.quienes-somos .contenido-textos {
+    color: #eff5f5;
+    width: 40%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+
+/*¿Por que elegirnos?*/
+
+.porque-elegirnos {
+    background: #1F8A70;
+}
+
+.contenedor-porque-elegirnos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-por-que-elegirnos {
+    width: 40%;
+}
+
+.porque-elegirnos .contenido-textos {
+    color: #eff5f5;
+    width: 40%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+
+/* Propuesta educativa */
+
+.propuesta-educativa {
+    background: #1F8A70;
+}
+
+.galeria-propuesta-educativa {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-prop {
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .8);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.imagen-prop>img {
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(165, 63%, 33%, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria p {
+    color: #eff5f5;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.imagen-prop:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/*Ultimas noticias*/
+
+.ultimas-noticias {
+    background: #1F8A70;
+    padding: 0 0 270px 0;
+}
+
+.contenedor-ultimas-noticias {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ultimas-noticias .contenido-texto1 {
+    width: 40%;
+    color: #eff5f5;
+}
+
+.contenido-texto1 h3 {
+    margin-bottom: 10px;
+}
+
+.ultimas-noticias .contenido-texto2 {
+    width: 40%;
+    color:#eff5f5
+}
+
+.contenido-texto2 h3 {
+    margin-bottom: 10px;
+}
+
+/*footer*/
+
+footer{
+    background: #00425a;
+    padding: 10px 0 10px 0;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.contenedor-footer h2{
+    color: #FC7300;
+    padding: 10px;
+}
+
+.conten-foo{
+    display: flex;
+    padding: 10px;
+}
+.conten-foo p{
+    font-size: 20px;
+    color:#eff5f5
+
+}
